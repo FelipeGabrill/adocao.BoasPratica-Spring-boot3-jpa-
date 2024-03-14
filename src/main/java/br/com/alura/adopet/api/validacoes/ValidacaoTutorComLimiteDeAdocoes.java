@@ -3,6 +3,7 @@ package br.com.alura.adopet.api.validacoes;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import br.com.alura.adopet.api.dto.SolicitacaoAdocaoDTO;
 import br.com.alura.adopet.api.excpetion.ValidacaoExcpetion;
@@ -12,7 +13,8 @@ import br.com.alura.adopet.api.model.Tutor;
 import br.com.alura.adopet.api.repository.AdocaoRepository;
 import br.com.alura.adopet.api.repository.TutorRepository;
 
-public class ValidacaoTutorComLimiteDeAdocoes {
+@Component
+public class ValidacaoTutorComLimiteDeAdocoes implements ValidacaoSolicitacaoAdocao {
 
 	@Autowired
 	private AdocaoRepository adocaoRepository;

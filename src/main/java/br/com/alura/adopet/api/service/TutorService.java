@@ -1,6 +1,7 @@
 package br.com.alura.adopet.api.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import br.com.alura.adopet.api.dto.AtualizacaoTutorDTO;
 import br.com.alura.adopet.api.dto.CadastroTutorDTO;
@@ -8,6 +9,7 @@ import br.com.alura.adopet.api.excpetion.ValidacaoExcpetion;
 import br.com.alura.adopet.api.model.Tutor;
 import br.com.alura.adopet.api.repository.TutorRepository;
 
+@Service
 public class TutorService {
 	
     @Autowired
